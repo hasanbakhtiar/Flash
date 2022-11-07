@@ -1,0 +1,33 @@
+.boxOne,.boxTwo{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.boxOne{
+    background-color: blueviolet;
+}
+.boxTwo{
+    background-color: burlywood;
+}
+
+/* .box-one,.box-two{
+    width: 100px;
+    height: 100px;
+} */
+.box-one{
+    /* background-color: red; */
+    /* margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 10px; */
+    margin: 100px 10px 50px 100px;
+}
+.box-two{
+    background-color: green;
+    /* padding-left: 100px;
+padding-top: 100px;
+padding-bottom: 50px;
+padding-right: 10px; */
+/* padding: 100px 10px 50px 100px; */
+}

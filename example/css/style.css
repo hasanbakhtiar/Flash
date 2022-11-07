@@ -1,0 +1,51 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    
+}
+
+header nav{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+header *{
+    display: inline-block;
+}
+header nav ul li{
+    margin-left: 200px;
+}
+.wrapper{
+    display: inline-block;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.wrapper .hero{
+    display: inline-block;
+        width: 80%;
+        height: 300px;
+}
+.wrapper .hero *{
+    display: inline-block;
+}
+.wrapper .hero .left-box *{
+    display: inline-block;
+}
+.wrapper .hero .left-box{
+    width: 30%;
+    height: 300px;
+    background-color: grey;
+    margin-top: 100px;
+
+}
+.wrapper .hero .right-box{
+    width: 60%;
+    height: 189px;
+    background-color: black;
+    padding-top: 110px;
+}
+
+.wrapper .hero .right-box h1{
+    color: white;
+    margin-left: 400px;
+}

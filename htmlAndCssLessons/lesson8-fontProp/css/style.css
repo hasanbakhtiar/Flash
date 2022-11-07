@@ -1,0 +1,23 @@
+.head-text{
+    color: red;
+}
+/*
+this 
+is 
+comment
+*/
+.text{
+    color: white;
+    background-color: grey;
+    /* font-size: 15px;
+    font-weight: 900;
+    font-style: italic; */
+    /* letter-spacing: 10px; */
+    /* line-height: 100px; */
+    /* text-align: justify; */
+    /* text-transform: lowercase; */
+    /* text-decoration: underline; */
+    /* font-family: sans-serif; */
+    
+
+}
