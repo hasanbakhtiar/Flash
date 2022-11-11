@@ -1,0 +1,36 @@
+/* img{
+    float: left;
+}
+.text{
+    clear: both;
+} */
+
+.main-box{
+    width: 70%;
+    height: 70vh;
+    /* viewport height */
+    border: 5px solid black;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    /* background-color: red; */
+    /* background-color:rgb(red, green, blue); */
+    /* background-color:#a8b038bb; */
+
+    /* opacity: 1; */
+    /* 0123456789abcdef */
+    /* min - 3 max - 6 opacity - 8 */
+
+
+    margin: 3px;
+    color: white;
+    font-size: 50px;
+}
