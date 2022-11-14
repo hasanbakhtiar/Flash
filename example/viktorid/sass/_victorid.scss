@@ -1,0 +1,23 @@
+.victorid{
+    width: 100%;  
+    height: auto;
+    @include center();
+    .victorid-con{
+        width: 80%;
+    @include between();
+        .left,.right{
+            width: 47%;
+            height: 536px;
+            
+
+        }
+        .left{
+            img{
+                width: 100%;
+            }
+        }
+        .right{
+            background-color: #eee;
+        }
+    }
+}
