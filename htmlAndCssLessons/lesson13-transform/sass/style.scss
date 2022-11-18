@@ -1,0 +1,29 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    // transform: translateX(100px);
+    // transform: translateY(200px);
+    // transform: translate(200px,300px);
+    // transform: scale(2);
+    // transform: skewY(100deg);
+    // transform: skewX(100deg);
+    // transform: skew(100deg,220deg);
+    // transform: rotate(200deg);
+    // background-image: url('https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+    // background-position: center;
+    // background-size: cover;
+    // clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    // matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+    // transform: matrix(2, -0.3, 0, 1,100, 0);
+
+}

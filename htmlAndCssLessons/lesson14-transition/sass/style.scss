@@ -1,0 +1,66 @@
+// body{
+//     // width: 100%;
+//     height: 300vh;
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: center;
+//     .box{
+//         width: 100px;
+//         height: 100px;
+//         background-color: red;
+//         // transition-duration: 3s;
+//         // transition-property: width;
+//         // transition-timing-function: linear;
+//         // transition: 1s width, 3s background-color;
+//         // transition: 1s;
+//         // transition-delay: 2s;
+//         // &:hover{
+//         //     width: 300px;
+//         //     background-color:green;
+//         // }
+        
+//     }
+// }
+
+// // section{
+// //     // width: 100%;
+// //     // height: 400px;
+// //     // background-image: url('https://images.unsplash.com/photo-1664575196412-ed801e8333a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=2500&q=660');
+// //     // background-position: center;
+// //     // background-size: cover;
+// //     // background-attachment: fixed;
+// // }
+
+
+
+// // .box:hover{
+    
+// // }
+// h1::before{
+//         content: " How a u?";
+// }
+
+.main-box{
+    position: relative;
+    height: 300px;
+    width: 100px;
+    background-color: red;
+
+
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        background-color: rgba($color: #000000, $alpha: .5);
+        width: 100px;
+        height: 0;
+        transition: 1s;
+    }
+    &:hover::after{
+        height: 300px;
+        content: "Hello";
+    }
+    
+}
+

@@ -1,0 +1,38 @@
+// .main-box{
+//     width: 90%;
+//     height: 70vh;
+//     background-color: black;
+//     .con-box{
+//             position: relative;
+
+//             width: 50%;
+//             height: 50vh;
+//             background-color: green;
+//             .box{
+//                 position: absolute;
+//                 bottom: 100px;
+//                 width: 100px;
+//                 height: 100px;
+//                 background-color: red;
+//             }
+//         }
+
+// }
+
+
+
+header{
+    // position: fixed;
+    // z-index: 3;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+}
+// p{
+//     position: relative;
+
+//     z-index: 2;
+// }
