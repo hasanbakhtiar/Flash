@@ -1,0 +1,121 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .logo{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    button{
+        display: none;
+    }
+}
+
+
+// max-width: 0dan -> verilan deyere qeder
+// min-width: spnsuzluqdan -> verilan deyere qeder
+@media (max-width:700px){
+    header{
+        background-color: green ;
+        ul{
+            display: none;
+        }
+        button{
+            display:block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// body{
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .con{
+//     position: relative;
+//     .cycle{
+//         position: absolute;
+//         border-radius: 50%;
+//         width: 400px;
+//         height: 400px;
+//         border: 3px solid #000;
+//         animation: firlana-firlana 3s infinite linear;
+//         .earth{
+//             position: absolute;
+//             top: 70px;
+//             width: 50px;
+//             height: 50px;
+//             background-color: blue;
+//             border-radius: 50%;
+//         }
+      
+//     }
+//     @keyframes firlana-firlana{
+//         0%{transform: rotate(360deg);}
+//     }
+    
+    
+//     .cycle1{
+//         position: absolute;
+//         left: 50px;
+//         top: 50px;
+//         border-radius: 50%;
+//         width: 300px;
+//         height: 300px;
+//         border: 3px solid #000;
+//         animation: firlana-firlana1 1s infinite linear; 
+//         .earth1{
+//             position: absolute;
+//             top: 70px;
+//             width: 50px;
+//             height: 50px;
+//             background-color: red;
+//             border-radius: 50%;
+//         }
+//     }
+//     @keyframes firlana-firlana1{
+//         0%{transform: rotate(360deg);}
+//     }
+// }
+
+
+

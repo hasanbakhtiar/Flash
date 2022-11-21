@@ -1,0 +1,34 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .logo {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header button {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header {
+    background-color: green;
+  }
+  header ul {
+    display: none;
+  }
+  header button {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

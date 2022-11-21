@@ -1,0 +1,68 @@
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation: action 5s infinite;
+          animation: action 5s infinite;
+}
+
+@-webkit-keyframes action {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: red;
+    rotate: 360deg;
+  }
+  25% {
+    left: 200px;
+    top: 0;
+    background-color: green;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  75% {
+    left: 0;
+    top: 200px;
+    background-color: yellow;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }
+}
+
+@keyframes action {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: red;
+    rotate: 360deg;
+  }
+  25% {
+    left: 200px;
+    top: 0;
+    background-color: green;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+    background-color: blue;
+    border-radius: 10px;
+  }
+  75% {
+    left: 0;
+    top: 200px;
+    background-color: yellow;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }
+}/*# sourceMappingURL=style.css.map */
