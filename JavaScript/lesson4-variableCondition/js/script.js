@@ -51,11 +51,97 @@
 // else - deyilse
 // else if  - deyilse eger
 
-var info =10;
-if (info == 5) {
-    console.log('this is 5');
-}else if(info == 10){
-        console.log('this is 10');
-}else{
-    console.log('something is wrong');
-}
+// var info =10;
+// if (info == 5) {
+//     console.log('this is 5');
+// }else if(info == 10){
+//         console.log('this is 10');
+// }else{
+//     console.log('something is wrong');
+// }
+
+
+
+// const myTime  = 9;
+// if (myTime > 5 && myTime<13) {
+//     console.log('good morning');
+//     if (myTime === 7) {
+//         console.log('get up');
+//     }else if(myTime === 9){
+//         console.log('have brakfast');
+//     }
+// }else if(myTime >= 13 && myTime<17){
+//     console.log('good afternoon');
+// }else if(myTime >= 17 && myTime<=21){
+//     console.log('good evening');
+// }else if(myTime > 21 && myTime<=23){
+//     console.log('good night');
+// }else{
+//     console.log('no time');
+// }
+
+
+
+// const info = 51;
+
+// switch(info){
+//     case 5:
+//         console.log('this is 5');
+//     break;
+
+//     case 10:
+//         console.log('this is 10');
+//     break;
+
+//     default :
+//     console.log('this is default');
+//     break;
+// }
+
+// let myTime = 5;
+
+// switch(myTime){
+//     case 5:
+//        myTime = 6;
+//        if (myTime>5) {
+//         console.log('clock running...');
+//         myTime = 10;
+//         switch (myTime) {
+//             case 10:
+//                 console.log('this is 10');
+//                 break;
+        
+//             default:
+//                 break;
+//         }
+//        }else{
+//         console.log('something is wrong...!');
+//        }
+//     break;
+//     case 7:
+//         console.log('7am');
+//     break;
+//     default:
+//         console.log('no time');
+//     break;
+// }
+
+// try{
+//     throw 'everything is ok'
+//     console.loag('Hello');
+// }catch(err){
+//     // console.log('something is wrong');
+//     console.log(err);
+// }finally{
+//     console.log('im running everytime');
+// }
+
+ const productOne = ['milk','cheese','bread']; 
+ const productTwo = ['meal','holland cheese','german bread']; 
+ const productThree = ['fanta','cheese','bread']; 
+
+ const myBudget = 10;
+
+ if (myBudget > 5) {
+    console.log(product);
+ }
