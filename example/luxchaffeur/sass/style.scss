@@ -1,0 +1,23 @@
+#hero-text{
+    position: relative;
+}
+#hero-text::before{
+    left: -10px;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 20vh;
+    width: 10px;
+    background-color: bisque;
+}
+
+.services{
+    background-image: url('../img/services.png');
+    background-position: center;
+    background-size: cover;
+    .card{
+        *{
+            color: #fff;
+        }
+    }
+}
