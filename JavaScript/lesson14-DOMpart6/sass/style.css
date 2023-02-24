@@ -1,0 +1,23 @@
+.light {
+  background-color: #eee;
+  color: #333;
+}
+
+.dark {
+  background-color: #333;
+  color: #eee;
+}
+.dark nav {
+  border: 1px solid #fff;
+  background-color: #333;
+}
+.dark nav * {
+  color: #eee;
+}
+.dark .card {
+  border: 1px solid #fff;
+  background-color: #333;
+}
+.dark footer a {
+  color: #fff !important;
+}/*# sourceMappingURL=style.css.map */

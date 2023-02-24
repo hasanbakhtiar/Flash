@@ -1,0 +1,21 @@
+.dark{
+    background-color: #333;
+    color: #eee;
+    nav{
+        border: 1px solid #fff;
+
+        background-color: #333;
+        *{
+            color: #eee;
+        }
+    }
+    .card{
+        border: 1px solid #fff;
+        background-color: #333;
+    }
+    footer{
+        a{
+            color: #fff !important;
+        }
+    }
+}
