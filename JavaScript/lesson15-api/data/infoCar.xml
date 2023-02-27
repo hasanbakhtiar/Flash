@@ -1,0 +1,20 @@
+<info>
+        <car id="1">
+            <brand>BMW</brand>
+            <model>X5</model>
+            <color>white</color>
+            <year>2021</year>
+        </car id="2">
+          <car>
+            <brand>BMW</brand>
+            <model>X6</model>
+            <color>white</color>
+            <year>2021</year>
+        </car>
+          <car id="3">
+            <brand>BMW</brand>
+            <model>X7</model>
+            <color>white</color>
+            <year>2021</year>
+        </car>
+</info>

@@ -1,0 +1,22 @@
+{
+    "car":[
+        {
+            "brand":"BMW",
+            "model":"X5",
+            "color":"White",
+            "year":2021
+        },
+        {
+            "brand":"BMW",
+            "model":"X6",
+            "color":"White",
+            "year":2021
+        },
+        {
+            "brand":"BMW",
+            "model":"X7",
+            "color":"White",
+            "year":2021
+        }
+   ]
+}
