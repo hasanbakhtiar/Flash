@@ -36,12 +36,26 @@
 // console.log(navigator.platform);
 
 
-if (navigator.language === "en-US" || "en-UK") {
-    document.body.innerHTML = "English"
-}else{
-    document.body.innerHTML = "Azerbaijan"
+// if (navigator.language === "en-US" || "en-UK") {
+//     document.body.innerHTML = "English"
+// }else{
+//     document.body.innerHTML = "Azerbaijan"
 
-}
+// }
+// document.querySelector('input').onclick=()=>{
+//     if (!document.querySelector('input').checked) {
+//         document.querySelector('input').setAttribute('checked',"");
+//     }else{
+       
+
+//     }
+// }
+
+// if (document.querySelector('input').checked) {
+//     console.log(true);
+// }else{
+//     console.log(false);
+// }
 
 // ["af", "sq", "ar-SA", "ar-IQ", "ar-EG", "ar-LY", "ar-DZ", "ar-MA", "ar-TN", "ar-OM",
 //  "ar-YE", "ar-SY", "ar-JO", "ar-LB", "ar-KW", "ar-AE", "ar-BH", "ar-QA", "eu", "bg",
@@ -55,3 +69,20 @@ if (navigator.language === "en-US" || "en-UK") {
 //  "es-PE", "es-EC", "es-CL", "es-UY", "es-PY", "es-BO", "es-SV", "es-HN", "es-NI", 
 //  "es-PR", "sx", "sv", "sv-FI", "th", "ts", "tn", "tr", "uk", "ur", "ve", "vi", "xh",
 //  "ji", "zu"];
+
+
+const input = document.querySelector('input');
+const span  = document.querySelector('span');
+const test = document.querySelector('button');
+test.onclick = ()=>{
+    input.checked = true
+}
+const e = input.checked;
+console.log(e);
+if (e) {
+    span.style.textDecoration = 'line-through';
+    
+}else{
+    span.style.textDecoration = 'none';
+
+}
