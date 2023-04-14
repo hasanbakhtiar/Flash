@@ -41,3 +41,33 @@
 // const myMoto = new Moto("Yamaha","S500",2002);
 
 // console.log(myMoto.calculateSpeed(500,4));
+
+
+
+
+// setTimeout -> mueyyen bir zamandan sonra  funksiyani 1 defe ise salir
+// setInterval -> mueyyen bir zamandan funksiyani  ise salir araligindan   (sonsuz) 
+
+// 1000ms  = 1s 
+
+// setTimeout(()=>{
+//     document.write("hello")
+// },2000);
+
+
+// setInterval(()=>{
+//     document.write("hello<br>")
+// },2000);
+
+const main  = document.querySelector('main');
+const loading = document.querySelector('h3');
+
+setTimeout(()=>{
+    main.style.display = 'block';
+    loading.style.display = 'none'
+},2000)
+
+
+setInterval(()=>{
+    document.querySelector('p').innerHTML  = new Date();
+},1000);
