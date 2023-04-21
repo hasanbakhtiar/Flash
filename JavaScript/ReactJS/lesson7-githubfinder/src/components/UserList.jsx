@@ -7,7 +7,7 @@ class UserList extends Component {
       <div className="container">
         <div className="row g-5">
           {this.props.allusers.map((items) => {
-            return <SingleCard alldata={items} />;
+            return <SingleCard key={items.id} alldata={items} />;
           })}
         </div>
       </div>

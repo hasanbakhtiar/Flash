@@ -5,12 +5,16 @@ class Search extends Component {
     super();
     this.state = {
       keyword: "",
+      press: false,
     };
   }
 
   formSubmit = (e) => {
     e.preventDefault();
     this.props.comingKeyword(this.state.keyword);
+    setTimeout(() => {
+      this.props.checkPress(this.state.press);
+    }, 1000);
   };
 
   render() {
@@ -25,7 +29,7 @@ class Search extends Component {
                   className="form-control"
                   placeholder="Enter username"
                   onChange={(e) => {
-                    this.setState({ keyword: e.target.value });
+                    this.setState({ keyword: e.target.value, press: true });
                   }}
                 />
                 <button
