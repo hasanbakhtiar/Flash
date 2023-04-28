@@ -1,10 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Counter = () => {
+
+    
+    
+    
     const [state,setState] = useState(1);
     const [text,setText] = useState("hello");
+
+
+    useEffect(()=>{
+        console.log('useEffect is running...');
+    },[text])
+    
+    
     const increment = ()=>{
+       if (state<5) {
         setState(state+1)
+       }
     }
   return (
     <div className='container mt-5'>
