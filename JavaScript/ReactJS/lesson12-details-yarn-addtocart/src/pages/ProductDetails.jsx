@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { LinkContainer } from 'react-router-bootstrap';
 import { useParams } from 'react-router-dom'
+import { useCart } from 'react-use-cart';
 
 const ProductDetails = () => {
     const {id} = useParams();
@@ -13,7 +14,7 @@ const ProductDetails = () => {
     },[])
 
     const productdetails = products.find(p=>p.id.toString() === id);
-    
+    const {addItem} = useCart();
     
   return (
 <>
@@ -27,7 +28,7 @@ const ProductDetails = () => {
       <p className="lead">{productdetails.description}</p>
       <p className=" text-success" style={{"textWeight":"bolder !important","fontSize":"25px"}}>{productdetails.price}$</p>
       <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" className="btn btn-primary btn-lg px-4 me-md-2">Add to cart</button>
+        <button onClick={()=>{addItem(productdetails)}} type="button" className="btn btn-primary btn-lg px-4 me-md-2">Add to cart</button>
         <LinkContainer to='/products'>
         <button type="button" className="btn btn-outline-secondary btn-lg px-4">Back</button>
         </LinkContainer>

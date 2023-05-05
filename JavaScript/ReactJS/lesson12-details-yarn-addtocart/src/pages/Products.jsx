@@ -21,6 +21,7 @@ const Products = () => {
             price={item.price}
             key={item.id}
             id={item.id}
+            alldata={item}
             />
         ))}
         </Row>
