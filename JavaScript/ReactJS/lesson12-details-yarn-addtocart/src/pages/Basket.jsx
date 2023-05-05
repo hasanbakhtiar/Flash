@@ -1,10 +1,20 @@
 import React from "react";
 import { Button, Table } from "react-bootstrap";
 import { useCart } from "react-use-cart";
-
+import { ToastContainer, toast } from "react-toastify";
 const Basket = () => {
   const { items, updateItemQuantity, removeItem, cartTotal, emptyCart, isEmpty } = useCart();
-
+  const notify = () =>
+    toast.error("Deleted!", {
+      position: "bottom-right",
+      autoClose: 500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
   return (
     isEmpty?<div className="d-flex align-items-center justify-content-center">
       <img className="text-center" src="https://cdn.dribbble.com/users/461802/screenshots/4421003/media/e5ec819f7ae4ac0b46aa96643193d5e8.gif" alt="err"/>
@@ -53,7 +63,7 @@ const Basket = () => {
                   <Button
                     variant="danger"
                     onClick={() => {
-                      removeItem(item.id);
+                      notify(removeItem(item.id));
                     }}
                   >
                     X
@@ -75,6 +85,18 @@ const Basket = () => {
       <h4>
         Total Price:<span className="text-danger">{cartTotal.toFixed()}$</span>
       </h4>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 };
