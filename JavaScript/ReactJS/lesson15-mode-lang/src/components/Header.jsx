@@ -1,10 +1,12 @@
-import Container from 'react-bootstrap/Container';
+import { useContext } from 'react';
+import {Container,Button} from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap';
+import { ModeContext } from '../context/ModeContext';
 
 function Header() {
+    const [mode,setMode] = useContext(ModeContext);
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -21,6 +23,13 @@ function Header() {
                         </LinkContainer>
 
                     </Nav>
+                    <Button variant="warning" onClick={
+                          ()=>{
+                            mode==="light"?setMode('dark'):setMode('light');
+                            mode==="light"?localStorage.setItem('mode','dark'):localStorage.setItem('mode','light');
+                          }
+                        
+                    }>{mode==="light"?"Dark":"Light"}</Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
