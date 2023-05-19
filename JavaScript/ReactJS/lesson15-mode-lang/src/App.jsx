@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap'
 import { ProductProvider } from './context/ProductContext'
 import { ModeContext, ModeProvider } from './context/ModeContext'
 import './sass/style.scss';
+import { LangProvider } from './context/LangContext'
 const Main = () => {
   const [mode] = useContext(ModeContext);
   return (
@@ -28,9 +29,11 @@ const Main = () => {
 const App = () => {
   return (
     <BrowserRouter>
-      <ModeProvider>
-        <Main />
-      </ModeProvider>
+      <LangProvider>
+        <ModeProvider>
+          <Main />
+        </ModeProvider>
+      </LangProvider>
     </BrowserRouter>
   )
 }
