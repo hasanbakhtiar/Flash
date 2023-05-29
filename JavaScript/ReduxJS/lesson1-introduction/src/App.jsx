@@ -7,7 +7,7 @@ const intialState = {count:0}
 const countReducer =(state=intialState,action)=>{
         switch (action.type) {
             case "increment":
-                return {count:state.count +1}
+                return {count:state.count + (typeof action.payload === "number" ? action.payload : 1)}
             case "decrement":
                 return {count:state.count-1}
                 case "reset":
@@ -25,21 +25,10 @@ store.subscribe(()=>{
 
 
 store.dispatch({
-    type:"increment"
+    type:"increment",
+    payload:10
 })
 
-store.dispatch({
-    type:"reset"
-})
-
-
-
-store.dispatch({
-    type:"decrement"
-})
-store.dispatch({
-    type:"reset"
-})
 
 
 
