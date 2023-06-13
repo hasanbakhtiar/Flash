@@ -17,6 +17,19 @@ export const blogReducer = (state = initialBlog, action) => {
     switch (action.type) {
         case "ADD_BLOG":
             return [...state,action.newblog]
+        
+
+        case "EDIT_BLOG":
+            return state.map((b)=>{
+                if (b.id === action.id) {
+                        return {
+                            ...b,...action.update
+                        }
+                }else{
+                    return b;
+                }
+            })
+            
 
         case "REMOVE_BLOG":
             return state.filter(item=>{

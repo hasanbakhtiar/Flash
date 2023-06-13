@@ -32,7 +32,7 @@ const BlogForm = ({formSubmit,editblog}) => {
     </Form.Group>
 
     <Button variant="primary" type="submit">
-      Publish
+     {editblog?"Edit":"Add"} 
     </Button>
   </Form>
    </Col>
