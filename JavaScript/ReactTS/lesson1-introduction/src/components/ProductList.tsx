@@ -1,8 +1,6 @@
 import React, { useEffect, useState }  from  "react";
 import SingleCard from "./SingleCard";
 import { Container, Row } from "react-bootstrap";
-import products from "../data/products";
-import { productType } from "../config";
 import axios from "axios";
 
 const ProductList: React.FC = () => {
@@ -14,7 +12,7 @@ const ProductList: React.FC = () => {
    },[])
   return (
     <div>
-      <h1 className="text-center my-5"></h1>
+      <h1 className="text-center my-5">Product List</h1>
       <Container>
         <Row className="g-4">
           {data.map((item: any, count: number) => (
