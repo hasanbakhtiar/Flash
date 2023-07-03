@@ -4,9 +4,11 @@ import Card from "react-bootstrap/Card";
 import { LinkContainer } from "react-router-bootstrap";
 import { useCart } from "react-use-cart";
 import { ToastContainer, toast } from "react-toastify";
-
+import AOS from 'aos';
+import { useEffect } from "react";
 function SingleCard({ title, photo, price, id, alldata }) {
   const { addItem } = useCart();
+  useEffect(()=>{AOS.init()},[])
   const notify = () =>
     toast.success("Product added to basket!", {
       position: "bottom-right",
@@ -20,7 +22,7 @@ function SingleCard({ title, photo, price, id, alldata }) {
     });
   return (
     <Col sm={6} md={3}>
-      <Card>
+      <Card data-aos="flip-down">
         <Card.Img variant="top" src={photo} height={300} />
         <Card.Body>
           <Card.Title>{title}</Card.Title>
