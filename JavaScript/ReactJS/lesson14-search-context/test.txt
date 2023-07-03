@@ -5,11 +5,11 @@ import { ProductContext } from '../context/ProductContext';
 
 const Products = () => {
   const [product] = useContext(ProductContext);
-  const [filterData, setFilterData] = useState(product);
+  const [filterData, setFilterData] = useState<any[]>(product);
 
-  const categoryFilter = (cat) => {
+  const categoryFilter = (cat:string) => {
 
-    const result = product.filter(item => {
+    const result:any[] = product.filter((item:any) => {
       return item.category === cat
     });
     setFilterData(result);
@@ -45,7 +45,7 @@ const Products = () => {
         </Col>
         <Col sm={12} md={9}>
           <Row className='g-5'>
-            {filterData.length === 0 ? product.map(item => (
+            {filterData.length === 0 ? product.map((item:any) => (
               <SingleCard
                 photo={item.image}
                 title={item.title}
@@ -54,7 +54,7 @@ const Products = () => {
                 id={item.id}
                 alldata={item}
               />
-            )) : filterData.map(item => (
+            )) : filterData.map((item:any) => (
               <SingleCard
                 photo={item.image}
                 title={item.title}

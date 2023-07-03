@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import { LinkContainer } from "react-router-bootstrap";
 import { useCart } from "react-use-cart";
 import { ToastContainer, toast } from "react-toastify";
+
 function SingleCard({ title, photo, price, id, alldata }) {
   const { addItem } = useCart();
   const notify = () =>
@@ -25,8 +26,9 @@ function SingleCard({ title, photo, price, id, alldata }) {
           <Card.Title>{title}</Card.Title>
           <Card.Text>{price}$</Card.Text>
 
-          <Button
-            variant="success"
+        <div className="d-flex">
+        <Button
+            variant="success btn-sm"
             onClick={() => {
               notify(addItem(alldata));
             }}
@@ -34,10 +36,11 @@ function SingleCard({ title, photo, price, id, alldata }) {
             Add to cart
           </Button>
           <LinkContainer to={`/products/${id}`}>
-            <Button className="ms-3" variant="primary">
+            <Button className="ms-3" variant="primary btn-sm">
               Read More
             </Button>
           </LinkContainer>
+        </div>
         </Card.Body>
       </Card>
       <ToastContainer

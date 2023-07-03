@@ -51,7 +51,7 @@ function Header() {
           <ListGroup>
   {query === ""? <></> :  product.filter(q=>q.title.toLocaleLowerCase().includes(query)).map(item=>(
 
-<ListGroup.Item>{item.title}</ListGroup.Item>
+<LinkContainer to={`/products/${item.id}`}><ListGroup.Item className="search-item">{item.title}</ListGroup.Item></LinkContainer>
 ))}
     </ListGroup>
                 </div>
