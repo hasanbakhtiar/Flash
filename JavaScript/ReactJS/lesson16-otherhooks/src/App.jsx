@@ -1,12 +1,10 @@
 import React from 'react'
-import AppUseRef from './components/AppUseRef'
-import AppUseLayoutEffect from './components/AppUseLayoutEffect'
-import AppUseImperativeHandle from './components/AppUseImperativeHandle'
+import AppUseMemo from './components/AppUseMemo'
 
 const App = () => {
   return (
     <div>
-      <AppUseImperativeHandle />
+      <AppUseMemo />
     </div>
   )
 }
