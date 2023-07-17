@@ -9,8 +9,12 @@ const App: React.FC = () => {
 
   const formSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    dispatch(add(title));
-    setTitle('');
+    if (!title) {
+      alert("fill input");
+    } else {
+      dispatch(add(title));
+      setTitle("");
+    }
   };
   return (
     <div className="container">
