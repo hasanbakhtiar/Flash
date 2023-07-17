@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { add } from "./features/todoSlice";
+import React, { useState } from "react";
+import { add, remove } from "./features/todoSlice";
+import { useAppDispatch, useAppSelector } from "./store";
 
 const App: React.FC = () => {
-  const todoItems: any = useSelector((p) => p);
-  const dispatch: any = useDispatch();
-  const inputRef = useRef<HTMLInputElement>(null);
-  console.log(todoItems);
-  
+  const [title, setTitle] = useState<string>("");
+  const todoItems: any = useAppSelector((p) => p);
+  const dispatch: any = useAppDispatch();
+
   const formSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    dispatch(add(inputRef.current!.value))
+    dispatch(add(title));
+    setTitle('');
   };
   return (
     <div className="container">
@@ -23,7 +23,8 @@ const App: React.FC = () => {
                 type="text"
                 className="form-control"
                 placeholder="enter todo"
-                ref={inputRef}
+                onChange={(e) => setTitle(e.target.value)}
+                value={title}
               />
               <button
                 className="btn btn-outline-success"
@@ -36,8 +37,19 @@ const App: React.FC = () => {
           </form>
           <ul className="list-group">
             {todoItems.todos.map((item: any, c: number) => (
-              <li key={c} className="list-group-item">
+              <li
+                key={c}
+                className="list-group-item d-flex justify-content-between"
+              >
                 {item.title}
+                <button
+                  className="btn btn-danger"
+                  onClick={() => {
+                    dispatch(remove(item.id));
+                  }}
+                >
+                  X
+                </button>
               </li>
             ))}
           </ul>
